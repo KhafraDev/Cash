@@ -1,0 +1,22 @@
+{
+  "name": "cash",
+  "version": "1.0.0",
+  "description": "Cache module extending the native Map class.",
+  "main": "src/cache.js",
+  "scripts": {
+    "test": "test/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khafradev/cash.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Khafra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khafradev/cash/issues"
+  },
+  "homepage": "https://github.com/khafradev/cash#readme"
+}
