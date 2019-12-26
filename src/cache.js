@@ -17,7 +17,7 @@ class Cache extends Map {
      * @returns {Array<any>} cache keys.
      */
     keyArray() {
-        return [...new Set(this.keys())]; // take this Iterators!
+        return [...this.keys()]; // take this Iterators!
     }
 
     /**
@@ -26,7 +26,7 @@ class Cache extends Map {
      * @returns {Array<any>} cache values.
      */
     valueArray() {
-        return [...new Set(this.values())];
+        return [...this.values()];
     }
 
     /**

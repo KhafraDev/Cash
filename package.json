@@ -1,6 +1,6 @@
 {
   "name": "cash",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cache module extending the native Map class.",
   "main": "src/cache.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/khafradev/cash/issues"
   },
-  "homepage": "https://github.com/khafradev/cash#readme"
+  "homepage": "https://github.com/khafradev/cash#readme",
+  "directories": {
+    "test": "test"
+  }
 }
