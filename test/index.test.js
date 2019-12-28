@@ -37,4 +37,17 @@ describe('Cache', () => {
             assert(Cache.length, 5);
         });
     });
+    describe('#stringify', () => {
+        it('returns a string', () => assert.equal(typeof Cache.stringify(), 'string'));
+    });
+    describe('#parse(string, { override = boolean })', () => {
+        it('can be parsed back to a Cache object', () => {
+            const a = Cache.parse(Cache.stringify(), { override: true });
+            assert(a instanceof Cash, true);
+        });
+        it('can be parsed to a Map object', () => {
+            const a = Cache.parse(Cache.stringify(), { override: false });
+            assert(a instanceof Map, true);
+        });
+    })
 });

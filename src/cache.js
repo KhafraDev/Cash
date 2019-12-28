@@ -77,17 +77,18 @@ class Cache extends Map {
     }
 
     /**
-     * Converts string to Map (which can be converted back to Cache).
-     * @param {string} str 
-     * @returns {Map<any, any>} Map object from JSON
+     * Converts string to Map or a new Cache.
+     * @param {string} str JSON string.
+     * @param {boolean} override Whether to create a new Cache or a new Map.
+     * @returns {Cache<any, any>|Map<any, any>} Map or Cache object.
      */
-    parse(str = '{}') {
+    parse(str = '{}', { override = false } = {}) {
         try {
             const parsed = JSON.parse(str); // can throw error
-            const cache = new Map();
+            const cache = override ? new this.constructor() : new Map();
 
             for(const [key, value] of Object.entries(parsed)) {
-                cache.set(key, value);    
+                cache.set(key, value);
             }
 
             return cache;
