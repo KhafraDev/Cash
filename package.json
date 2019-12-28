@@ -1,10 +1,10 @@
 {
   "name": "cash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cache module extending the native Map class.",
   "main": "src/cache.js",
   "scripts": {
-    "test": "test/index.test.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
